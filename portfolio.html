@@ -1,41 +1,15 @@
-</head>
+<!DOCTYPE HTML>
+<html>
 
-<body>
-    <div id="all-contents">
-        <nav>
-            <h1>Peyton's Website</h1>
-            <ul id="nav-li">
-                <li class="nav-li"><a class="nav-li" href="index.html">Home</a>
-                </li>
-                <li class="nav-li"><a class="nav-a" href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-    </div>
-    </nav>
-    </div>
-</body>
-
-</html>
-<nav>
-    <!-- Nav stuff here -->.
-</nav>
-<main>
-    <div class="content">
-            <h1>portfolio</h1>
-            <ul id="portfolio">
-        </ul>
-    </div>
-</main>
-<li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
-    <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
-    <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
+<head>
     <style type="text/css">
         body {
-            background: rgb(125, 198, 205);
-            color: rgb(45, 45, 45);
+            background: rgb(38, 42, 38);
+            color: rgb(18, 6, 188);
             padding: 10px;
             font-family: arial;
         }
+
         header {
             font-size: 1.5em;
             font-weight: bold;
@@ -48,11 +22,12 @@
 
         /* navigation menu */
         nav {
-            background: rgb(239, 80, 41);
+            background: rgb(229, 13, 13);
             margin: 0 auto;
             display: flex;
             padding: 10px;
         }
+
         h1 {
             display: flex;
             align-items: center;
@@ -60,13 +35,16 @@
             flex: 1;
             margin: 0;
         }
+
         #nav-ul {
             list-style-image: none;
         }
+
         .nav-li {
             display: inline-block;
             padding: 0 10px;
         }
+
         .nav-a {
             text-decoration: none;
             color: #fff;
@@ -74,38 +52,71 @@
 
         /* main container area beneath menu */
         main {
-            background: rgb(245, 238, 219);
+            background: rgb(255, 225, 143);
             display: flex;
         }
+
         .content {
             flex: 1;
             padding: 15px;
         }
+
         /* portfolio styles */
         .content h1 {
-             color: black;
-         }
+            color: black;
+        }
 
-         #portfolio {
-             list-style-type: none;
-             padding-left: 0;
-         }
+        #portfolio {
+            list-style-type: none;
+            padding-left: 0;
+        }
 
-         #portfolio li {
-             background: #fff;
-             padding: 10px;
-             border-radius: 10px;
-             margin-bottom: 10px;
-         }
+        #portfolio li {
+            background: rgb(216, 17, 17);
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
 
-         #portfolio li:hover {
-             background: #eee;
-         }
+        #portfolio li:hover {
+            background: rgb(250, 248, 248);
+        }
 
-         #portfolio a {
-             text-decoration: none;
-             color: #454545;
-         }
+        #portfolio a {
+            text-decoration: none;
+            color: #090808;
+        }
     </style>
-    
-    
+</head>
+
+<body>
+    <div id="all-contents">
+    <nav>
+        <!-- Nav stuff here -->
+        <h1>Peyton's Website</h1>
+        <ul id="nav-li">
+            <li class="nav-li"><a class="nav-li" href="index.html">Home</a>
+            </li>
+            <li class="nav-li"><a class="nav-a" href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <h1>Portfolio</h1>
+            <ul id="portfolio">
+                <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure
+                        game for
+                        Halleb0t</a></li>
+                <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development
+                        on the web
+                    </a></li>
+                <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and
+                        velocity applied
+                        to circle shapes...</a></li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
