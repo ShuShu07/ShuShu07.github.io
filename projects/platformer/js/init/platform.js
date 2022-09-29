@@ -22,6 +22,10 @@
    *              stretch the platform in width.
    *      scaleY: OPTIONAL The scale factor on the y-axis, this value will
    *              stretch the platform in height.
+   *
+   *
+   * 
+   * 
    */
   function init(game) {
     let createPlatform = platform.create;
@@ -37,8 +41,9 @@
     createPlatform(0, game.world.height - 32, 3, 2); // DO NOT DELETE
 
     // example:
-    createPlatform(400, 250);
-    createPlatform(170, 460, 0.5);
+    createPlatform(400, 480); // normal platform
+    createPlatform(300, 400, 0.3); // small horizontal platform (30% the normal width
+    createPlatform(500,600, 3.0, 10) // tall vertical wall (30% the normal width and 10x the height)
 
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
