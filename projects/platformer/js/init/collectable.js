@@ -10,6 +10,7 @@
     steve: { assetKey: "steve", points: 30 },
     grace: { assetKey: "grace", points: 40 },
     kennedi: { assetKey: "kennedi", points: 50 },
+    peepo: { assetKey: "peepo", points: 9001 },
   };
 
   window.opspark.collectable.type = type;
@@ -39,7 +40,7 @@
     // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
 
     // example:
-    createCollectable(type.max, 200, 170, 6, 0.7);
+    createCollectable(type.peepo, 200, 170, 6, 0.7);
 
     
    
