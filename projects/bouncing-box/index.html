@@ -50,7 +50,7 @@
 
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
-			
+
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
 
@@ -68,7 +68,8 @@
 
 			// TODO 2 - Variable declarations 
 			var positionX = 0
-
+			var points = 0
+			var speed = 10
 
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -78,7 +79,7 @@
 			function update() {
 				// Your code to increase positionx by 10 HERE*/
 				moveBoxTo(positionX);
-				positionX = positionX + 10
+				positionX = positionX + speed
 			};
 
 
@@ -89,8 +90,10 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				positionX = 0;
-			changeBoxText(1);
+				// positionX = positionX + 10;
+				speed = speed + 3
+				points++
+				changeBoxText(points);
 
 
 
