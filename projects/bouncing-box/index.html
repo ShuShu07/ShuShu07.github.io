@@ -80,7 +80,22 @@
 				// Your code to increase positionx by 10 HERE*/
 				moveBoxTo(positionX);
 				positionX = positionX + speed
+
+				if (positionX > boardWidth) {
+					speed = -speed;
+				}
+
+				if (positionX < 0) {
+speed = -speed
+			}
+
+			
+			
+			
+
 			};
+
+
 
 
 
@@ -94,7 +109,15 @@
 				speed = speed + 3
 				points++
 				changeBoxText(points);
+				positionX += speed; 
+				
 
+				if (speed > 0) {
+					speed += 3
+				} else if (speed < 0) {
+					speed -= 3
+				}
+				
 
 
 			};
